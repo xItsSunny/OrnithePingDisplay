@@ -22,10 +22,7 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	exceptions ploceus.raven(project.raven_build)
-	signatures ploceus.sparrow(project.sparrow_build)
-	nests ploceus.nests(project.nests_build)
-	mappings ploceus.featherMappings(project.feather_build)
+	mappings ploceus.mcpMappings('stable', '1.8.9', '22')
 
 	ploceus.dependOsl(project.osl_version)
 }
